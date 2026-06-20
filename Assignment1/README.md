@@ -2,7 +2,7 @@
 
 ## Overview
 
-This assignment focuses on data cleaning, preprocessing, and exploratory data analysis (EDA) using the Pandas library in Python. The objective is to analyze a shopping dataset and prepare a clean dataset for further analysis.
+This assignment focuses on data cleaning, preprocessing, and exploratory data analysis (EDA) using the **Pandas** library in Python. The objective is to analyze a shopping dataset, clean the data, and prepare it for further analysis.
 
 ---
 
@@ -21,9 +21,9 @@ This assignment focuses on data cleaning, preprocessing, and exploratory data an
 
 ```
 Assignment1/
-│── Python_Pandas_Shopping_Analysis.ipynb
-│── shopping_raw.csv
-│── shopping_cleaned.csv
+├── Python_Pandas_Shopping_Analysis.ipynb
+├── shopping_raw.csv
+├── shopping_cleaned.csv
 └── README.md
 ```
 
@@ -55,43 +55,43 @@ Assignment1/
 - Checked for missing values
 - Removed duplicate records
 - Cleaned and preprocessed the dataset
-- Saved the processed dataset as `shopping_cleaned.csv`
+- Exported the cleaned dataset as `shopping_cleaned.csv`
 
 ---
 
 ## How to Run
 
-1. Clone the repository.
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/Sakshixa07/CelebalAssignments.git
 ```
 
-2. Navigate to the assignment folder.
+2. Navigate to the Assignment1 folder:
 
 ```bash
 cd CelebalAssignments/Assignment1
 ```
 
-3. Install the required libraries.
+3. Install the required libraries:
 
 ```bash
 pip install pandas numpy
 ```
 
-4. Launch Jupyter Notebook.
+4. Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook Python_Pandas_Shopping_Analysis.ipynb
 ```
 
-5. Run all cells to reproduce the analysis.
+5. Run all the cells to reproduce the analysis.
 
 ---
 
 ## Output
 
-The notebook generates a cleaned dataset named:
+After running the notebook, the cleaned dataset is generated as:
 
 - `shopping_cleaned.csv`
 
