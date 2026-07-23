@@ -1,0 +1,222 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/07/23 17:18:59 WARN Utils: Your hostname, vm, resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/07/23 17:18:59 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+/usr/local/lib/python3.12/dist-packages/pyspark/testing/utils.py:127: FutureWarning: PySpark does not yet fully support pandas >= 3.0.0. Some features may not work correctly. It is recommended to use pandas < 3.0.0 for now.
+  require_minimum_pandas_version()
+26/07/23 17:19:00 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+================================================================================
+SPARK ARCHITECTURE INFO
+================================================================================
+Spark version      : 4.2.0
+Master             : local[*]
+Default parallelism: 1  (this many executor cores/threads)
+App name / ID       : RetailDataPipeline / local-1784827142042
+
+================================================================================
+READING CSV WITH EXPLICIT SCHEMA
+================================================================================
+
+[Stage 0:>                                                          (0 + 1) / 1]
+
+                                                                                
+CSV row count       : 302010
+CSV read+count time : 5.28s
+root
+ |-- Transaction_ID: double (nullable = true)
+ |-- Customer_ID: double (nullable = true)
+ |-- Name: string (nullable = true)
+ |-- Email: string (nullable = true)
+ |-- Phone: double (nullable = true)
+ |-- Address: string (nullable = true)
+ |-- City: string (nullable = true)
+ |-- State: string (nullable = true)
+ |-- Zipcode: double (nullable = true)
+ |-- Country: string (nullable = true)
+ |-- Age: double (nullable = true)
+ |-- Gender: string (nullable = true)
+ |-- Income: string (nullable = true)
+ |-- Customer_Segment: string (nullable = true)
+ |-- Date: string (nullable = true)
+ |-- Year: double (nullable = true)
+ |-- Month: string (nullable = true)
+ |-- Time: string (nullable = true)
+ |-- Total_Purchases: double (nullable = true)
+ |-- Amount: double (nullable = true)
+ |-- Total_Amount: double (nullable = true)
+ |-- Product_Category: string (nullable = true)
+ |-- Product_Brand: string (nullable = true)
+ |-- Product_Type: string (nullable = true)
+ |-- Feedback: string (nullable = true)
+ |-- Shipping_Method: string (nullable = true)
+ |-- Payment_Method: string (nullable = true)
+ |-- Order_Status: string (nullable = true)
+ |-- Ratings: double (nullable = true)
+ |-- products: string (nullable = true)
+
+================================================================================
+LAZY EVALUATION DEMO - building a transformation chain (no execution yet)
+================================================================================
+Chain built (nothing has run yet). Logical + physical plan:
+== Physical Plan ==
+* Project (3)
++- * Filter (2)
+   +- Scan csv  (1)
+
+(1) Scan csv 
+Output [8]: [Transaction_ID#0, Customer_ID#1, Country#9, Date#14, Total_Amount#20, Product_Category#21, Order_Status#27, Ratings#28]
+Batched: false
+Location: InMemoryFileIndex [file:/home/claude/spark_project/data/new_retail_data.csv]
+PushedFilters: [IsNotNull(Country), IsNotNull(Total_Amount), EqualTo(Country,USA)]
+ReadSchema: struct<Transaction_ID:double,Customer_ID:double,Country:string,Date:string,Total_Amount:double,Product_Category:string,Order_Status:string,Ratings:double>
+
+(2) Filter [codegen id : 1]
+Input [8]: [Transaction_ID#0, Customer_ID#1, Country#9, Date#14, Total_Amount#20, Product_Category#21, Order_Status#27, Ratings#28]
+Condition : ((isnotnull(Country#9) AND isnotnull(Total_Amount#20)) AND (Country#9 = USA))
+
+(3) Project [codegen id : 1]
+Output [8]: [Transaction_ID#0, Customer_ID#1, Country#9, Product_Category#21, Total_Amount#20, Date#14, Order_Status#27, Ratings#28]
+Input [8]: [Transaction_ID#0, Customer_ID#1, Country#9, Date#14, Total_Amount#20, Product_Category#21, Order_Status#27, Ratings#28]
+
+================================================================================
+TRANSFORM: select, filter, rename, cast, derive columns, handle nulls
+================================================================================
+root
+ |-- transaction_id: long (nullable = true)
+ |-- customer_id: long (nullable = true)
+ |-- country: string (nullable = true)
+ |-- state: string (nullable = true)
+ |-- age: integer (nullable = true)
+ |-- gender: string (nullable = true)
+ |-- customer_segment: string (nullable = true)
+ |-- txn_date: date (nullable = true)
+ |-- total_purchases: integer (nullable = true)
+ |-- unit_amount: double (nullable = true)
+ |-- total_amount: double (nullable = true)
+ |-- product_category: string (nullable = true)
+ |-- product_brand: string (nullable = false)
+ |-- payment_method: string (nullable = true)
+ |-- order_status: string (nullable = false)
+ |-- ratings: integer (nullable = false)
+ |-- order_value_tier: string (nullable = false)
+ |-- txn_year: integer (nullable = true)
+ |-- txn_month: integer (nullable = true)
+
+Sample of cleaned data:
+
+[Stage 3:>                                                          (0 + 1) / 1]
+
+                                                                                
++--------------+-----------+---------+---------------+---+------+----------------+----------+---------------+-----------+------------+----------------+-------------+--------------+------------+-------+----------------+--------+---------+
+|transaction_id|customer_id|country  |state          |age|gender|customer_segment|txn_date  |total_purchases|unit_amount|total_amount|product_category|product_brand|payment_method|order_status|ratings|order_value_tier|txn_year|txn_month|
++--------------+-----------+---------+---------------+---+------+----------------+----------+---------------+-----------+------------+----------------+-------------+--------------+------------+-------+----------------+--------+---------+
+|8691788       |37249      |Germany  |Berlin         |21 |Male  |Regular         |2023-09-18|3              |108.03     |324.09      |CLOTHING        |Nike         |Debit Card    |Shipped     |5      |Medium          |2023    |9        |
+|2174773       |69749      |UK       |England        |19 |Female|Premium         |2023-12-31|2              |403.35     |806.71      |ELECTRONICS     |Samsung      |Credit Card   |Processing  |4      |High            |2023    |12       |
+|6679610       |30192      |Australia|New South Wales|48 |Male  |Regular         |2023-04-26|3              |354.48     |1063.43     |BOOKS           |Penguin Books|Credit Card   |Processing  |2      |High            |2023    |4        |
+|7232460       |62101      |Canada   |Ontario        |56 |Male  |Premium         |2023-05-08|7              |352.41     |2466.85     |HOME DECOR      |Home Depot   |PayPal        |Processing  |4      |High            |2023    |5        |
+|4983775       |27901      |UK       |England        |22 |Male  |Premium         |2024-01-10|2              |124.28     |248.55      |GROCERY         |Nestle       |Cash          |Shipped     |1      |Medium          |2024    |1        |
++--------------+-----------+---------+---------------+---+------+----------------+----------+---------------+-----------+------------+----------------+-------------+--------------+------------+-------+----------------+--------+---------+
+only showing top 5 rows
+
+[Stage 4:>                                                          (0 + 1) / 1]
+
+                                                                                
+
+[Stage 7:>                                                          (0 + 1) / 1]
+
+                                                                                
+Rows with null Total_Amount before cleaning: 350
+Rows with null total_amount after cleaning : 0
+
+[Stage 10:>                                                         (0 + 1) / 1]
+
+                                                                                
+Rows after cleaning pipeline                : 301021
+
+================================================================================
+WIDE TRANSFORMATION DEMO: groupBy + agg (triggers a shuffle)
+================================================================================
+Physical plan showing the Exchange (shuffle) step:
+== Physical Plan ==
+AdaptiveSparkPlan isFinalPlan=false
++- Sort [total_revenue#249 DESC NULLS LAST], true, 0
+   +- Exchange rangepartitioning(total_revenue#249 DESC NULLS LAST, 8), ENSURE_REQUIREMENTS, [plan_id=219]
+      +- HashAggregate(keys=[product_category#76], functions=[count(1), sum(total_amount#75), avg(total_amount#75)])
+         +- Exchange hashpartitioning(product_category#76, 8), ENSURE_REQUIREMENTS, [plan_id=216]
+            +- HashAggregate(keys=[product_category#76], functions=[partial_count(1), partial_sum(total_amount#75), partial_avg(total_amount#75)])
+               +- Project [round(Total_Amount#20, 2) AS total_amount#75, upper(trim(Product_Category#21, None)) AS product_category#76]
+                  +- Filter atleastnnonnulls(3, cast(Transaction_ID#0 as bigint), cast(Customer_ID#1 as bigint), round(Total_Amount#20, 2))
+                     +- FileScan csv [Transaction_ID#0,Customer_ID#1,Total_Amount#20,Product_Category#21] Batched: false, DataFilters: [atleastnnonnulls(3, cast(Transaction_ID#0 as bigint), cast(Customer_ID#1 as bigint), round(Total..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/home/claude/spark_project/data/new_retail_data.csv], PartitionFilters: [], PushedFilters: [], ReadSchema: struct<Transaction_ID:double,Customer_ID:double,Total_Amount:double,Product_Category:string>
+
+[Stage 13:>                                                         (0 + 1) / 1]
+
+                                                                                
++----------------+----------+-------------------+------------------+
+|product_category|num_orders|total_revenue      |avg_order_value   |
++----------------+----------+-------------------+------------------+
+|ELECTRONICS     |70941     |9.719200993000059E7|1370.040032280354 |
+|GROCERY         |66555     |9.088163138999952E7|1365.511702952438 |
+|CLOTHING        |54574     |7.469072705999973E7|1368.6137549015966|
+|BOOKS           |54455     |7.445680759999934E7|1367.3089266366603|
+|HOME DECOR      |54214     |7.410458749000019E7|1366.890240343826 |
+|NULL            |282       |380444.92000000004 |1349.0954609929079|
++----------------+----------+-------------------+------------------+
+
+================================================================================
+WRITE COMPARISON: CSV vs Parquet
+================================================================================
+
+[Stage 16:>                                                         (0 + 1) / 1]
+
+                                                                                
+
+[Stage 17:>                                                         (0 + 1) / 1]
+
+                                                                                
+CSV write time     : 6.73s
+Parquet write time : 6.69s
+CSV output size on disk     : 36M
+Parquet output size on disk : 7.4M
+
+================================================================================
+READ COMPARISON + PREDICATE PUSHDOWN
+================================================================================
+
+[Stage 18:>                                                         (0 + 1) / 1]
+
+                                                                                
+CSV     : filter(product_category == 'Clothing') -> 54574 rows in 1.20s
+Parquet : filter(product_category == 'Clothing') -> 54574 rows in 0.98s
+
+Parquet physical plan (look for 'PushedFilters' - this is predicate pushdown,
+Spark skips reading row groups that can't match the filter, using Parquet's
+own column statistics, instead of reading everything and filtering in memory):
+== Physical Plan ==
+*(1) Filter (isnotnull(product_category#391) AND (product_category#391 = CLOTHING))
++- *(1) ColumnarToRow
+   +- FileScan parquet [transaction_id#380L,customer_id#381L,country#382,state#383,age#384,gender#385,customer_segment#386,txn_date#387,total_purchases#388,unit_amount#389,total_amount#390,product_category#391,product_brand#392,payment_method#393,order_status#394,ratings#395,order_value_tier#396,txn_month#397,txn_year#398] Batched: true, DataFilters: [isnotnull(product_category#391), (product_category#391 = CLOTHING)], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/home/claude/spark_project/output/cleaned_retail_parquet], PartitionFilters: [], PushedFilters: [IsNotNull(product_category), EqualTo(product_category,CLOTHING)], ReadSchema: struct<transaction_id:bigint,customer_id:bigint,country:string,state:string,age:int,gender:string...
+
+Also note column pruning: Parquet is columnar, so selecting only 2-3 columns
+reads only those column chunks from disk. CSV is row-based and must read every
+column of every row regardless of what you select.
+Parquet column-pruned scan (2 cols only) time: 0.41s
+
+================================================================================
+BEST PRACTICES APPLIED IN THIS SCRIPT
+================================================================================
+
+- Explicit schema on read instead of inferSchema (avoids an extra full scan)
+- show()/count() used for inspection instead of collect() (never pulled full
+  data to the driver - with 300K+ rows collect() risks driver OOM and is
+  unnecessary since we only need to see samples or aggregates)
+- Parquet used for the final storage layer -> columnar, compressed, supports
+  predicate pushdown and column pruning, and is splittable for parallel reads
+- partitionBy("txn_year") on Parquet write -> future queries filtering by
+  year can skip whole partitions entirely (partition pruning)
+- Reduced spark.sql.shuffle.partitions to 8 to match this small local
+  environment (default 200 would create excessive tiny tasks here)
+
+Spark session stopped.
