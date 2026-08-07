@@ -1,0 +1,151 @@
+product_id,product_name,category,price,cost
+PROD0001,Everybody Home,Home & Kitchen,2002.86,1291.69
+PROD0002,Check Beauty Lite,Beauty,2472.29,1539.28
+PROD0003,Nice Home Pro,Home & Kitchen,14338.6,9127.82
+PROD0004,Truth Beauty Plus,Beauty,2001.32,1207.79
+PROD0005,Learn Grocery,Grocery,560.65,405.93
+PROD0006,Actually Fashion,Fashion,812.36,495.39
+PROD0007,Fight Electronics,Electronics,40685.29,24672.29
+PROD0008,Within Fashion Plus,Fashion,545.71,345.2
+PROD0009,Subject Beauty Lite,Beauty,390.58,215.32
+PROD0010,List Sports Lite,Sports,11743.74,7653.71
+PROD0011,Idea Beauty Lite,Beauty,1483.6,1096.35
+PROD0012,Resource Home Pro,Home & Kitchen,4952.6,3848.09
+PROD0013,Four Electronics Lite,Electronics,39659.48,27118.68
+PROD0014,Next Books Pro,Books,1289.47,1003.6
+PROD0015,Result Fashion Lite,Fashion,2263.06,1773.06
+PROD0016,Analysis Electronics Plus,Electronics,59834.55,44695.82
+PROD0017,Bill Fashion Max,Fashion,4701.06,3615.99
+PROD0018,Whose Electronics,Electronics,18955.94,10934.26
+PROD0019,Night Home,Home & Kitchen,4410.8,3004.11
+PROD0020,Public Fashion Plus,Fashion,4298.98,2657.67
+PROD0021,Health Grocery Lite,Grocery,156.01,114.32
+PROD0022,Three Books Lite,Books,459.17,254.16
+PROD0023,Lay Home,Home & Kitchen,11903.15,8553.61
+PROD0024,Popular Fashion Plus,Fashion,1123.83,850.46
+PROD0025,Why Sports Plus,Sports,4203.28,3015.07
+PROD0026,Reach Fashion Plus,Fashion,4912.92,3099.56
+PROD0027,Toward Fashion Plus,Fashion,331.1,201.6
+PROD0028,Explain Grocery Max,Grocery,302.64,189.3
+PROD0029,Government Books Max,Books,901.03,642.81
+PROD0030,Expect Books Pro,Books,429.82,286.41
+PROD0031,Example Fashion,Fashion,2204.46,1721.19
+PROD0032,Suffer Books Pro,Books,1176.78,835.13
+PROD0033,Billion Home Lite,Home & Kitchen,5639.02,3410.38
+PROD0034,Especially Fashion Plus,Fashion,2546.45,1876.56
+PROD0035,Real Sports,Sports,4733.42,3683.54
+PROD0036,Pattern Grocery Lite,Grocery,559.64,414.39
+PROD0037,Include Books Pro,Books,1155.64,787.43
+PROD0038,Main Sports Pro,Sports,8563.39,6673.55
+PROD0039,Spring Electronics,Electronics,5112.85,3966.15
+PROD0040,Republican Fashion Lite,Fashion,2990.7,1767.91
+PROD0041,So Grocery Pro,Grocery,543.32,391.23
+PROD0042,Effort Books Pro,Books,915.41,709.19
+PROD0043,Similar Beauty Plus,Beauty,2444.21,1424.94
+PROD0044,Remember Beauty Pro,Beauty,1423.72,981.94
+PROD0045,Per Books Pro,Books,1228.68,797.4
+PROD0046,Speech Grocery Lite,Grocery,51.86,36.02
+PROD0047,Day Electronics Pro,Electronics,26286.3,18013.76
+PROD0048,Nature Electronics Pro,Electronics,56173.09,44743.79
+PROD0049,Green Beauty Plus,Beauty,191.03,113.66
+PROD0050,Research Fashion Plus,Fashion,3898.39,2509.06
+PROD0051,Road Beauty Plus,Beauty,1399.76,901.32
+PROD0052,Couple Books,Books,1448.8,845.01
+PROD0053,Form Grocery Lite,Grocery,379.38,302.83
+PROD0054,Officer Beauty Lite,Beauty,1632.64,1238.69
+PROD0055,Action Grocery Max,Grocery,70.6,47.0
+PROD0056,Remember Books,Books,861.22,555.33
+PROD0057,Across Fashion Max,Fashion,1462.31,860.98
+PROD0058,Theory Fashion Pro,Fashion,4704.83,2625.55
+PROD0059,Author Books Pro,Books,685.94,418.54
+PROD0060,Actually Electronics Pro,Electronics,7402.46,4897.54
+PROD0061,Its Books Pro,Books,1083.6,662.28
+PROD0062,Billion Electronics Lite,Electronics,25032.52,17145.77
+PROD0063,Network Grocery Pro,Grocery,869.54,508.71
+PROD0064,Body Home,Home & Kitchen,3664.82,2307.83
+PROD0065,Reveal Sports Max,Sports,9361.22,5703.1
+PROD0066,Like Fashion,Fashion,4931.77,2985.01
+PROD0067,Have Home,Home & Kitchen,4271.55,3362.27
+PROD0068,Discuss Books Plus,Books,1375.21,947.47
+PROD0069,Share Electronics Plus,Electronics,58378.98,43577.06
+PROD0070,Federal Home Plus,Home & Kitchen,10505.06,6169.67
+PROD0071,Enter Beauty,Beauty,632.25,422.58
+PROD0072,Data Grocery Lite,Grocery,263.08,197.69
+PROD0073,Along Electronics Plus,Electronics,34399.58,23712.38
+PROD0074,Agent Fashion Max,Fashion,2124.57,1276.51
+PROD0075,President Books Plus,Books,209.7,159.75
+PROD0076,Best Electronics Lite,Electronics,32834.68,18482.12
+PROD0077,Art Beauty,Beauty,2052.65,1149.25
+PROD0078,Wrong Electronics,Electronics,12507.55,9143.97
+PROD0079,Phone Sports Lite,Sports,2916.61,2238.11
+PROD0080,Realize Home Pro,Home & Kitchen,4686.49,2825.73
+PROD0081,Wall Fashion Pro,Fashion,4820.76,3551.55
+PROD0082,Thing Grocery Lite,Grocery,503.97,364.83
+PROD0083,Director Books Lite,Books,385.32,265.11
+PROD0084,Place Grocery Plus,Grocery,317.91,217.26
+PROD0085,Pull Home Max,Home & Kitchen,4763.96,3230.94
+PROD0086,Campaign Beauty Plus,Beauty,1450.41,1073.89
+PROD0087,Section Home Max,Home & Kitchen,13732.01,8626.87
+PROD0088,Call Electronics Lite,Electronics,34407.7,25300.43
+PROD0089,Before Electronics,Electronics,16755.29,11641.34
+PROD0090,Total Beauty Lite,Beauty,955.06,604.04
+PROD0091,Point Beauty Lite,Beauty,1751.39,1181.88
+PROD0092,Case Books Max,Books,1419.85,872.26
+PROD0093,How Grocery Plus,Grocery,513.19,341.38
+PROD0094,Realize Books Lite,Books,1211.97,708.99
+PROD0095,South Sports,Sports,6063.96,4836.5
+PROD0096,We Electronics Pro,Electronics,32150.75,25280.04
+PROD0097,Raise Books Pro,Books,166.92,109.02
+PROD0098,Others Grocery Pro,Grocery,648.17,471.09
+PROD0099,Suggest Electronics Plus,Electronics,14295.1,9196.04
+PROD0100,Crime Sports,Sports,7797.29,6067.76
+PROD0101,War Books Pro,Books,782.0,534.15
+PROD0102,Bring Beauty,Beauty,133.37,97.43
+PROD0103,Safe Sports Pro,Sports,11738.74,7930.15
+PROD0104,Create Books Lite,Books,1042.65,601.35
+PROD0105,Environment Electronics Lite,Electronics,32176.55,19241.03
+PROD0106,Financial Sports Max,Sports,3327.3,2052.38
+PROD0107,Manage Beauty Plus,Beauty,328.16,218.14
+PROD0108,Recent Fashion Lite,Fashion,4953.1,3095.66
+PROD0109,Would Grocery Pro,Grocery,854.47,489.93
+PROD0110,Bag Beauty Plus,Beauty,1192.79,672.77
+PROD0111,Purpose Electronics Pro,Electronics,42616.44,28764.59
+PROD0112,Long Beauty Max,Beauty,1969.23,1361.65
+PROD0113,Win Grocery,Grocery,974.15,759.63
+PROD0114,Factor Fashion,Fashion,1292.66,864.63
+PROD0115,Specific Electronics Max,Electronics,55563.32,43052.01
+PROD0116,Late Sports Lite,Sports,8033.73,6283.92
+PROD0117,Role Home Lite,Home & Kitchen,430.76,300.14
+PROD0118,Well Grocery Plus,Grocery,828.66,648.19
+PROD0119,Region Home Lite,Home & Kitchen,2603.43,1800.72
+PROD0120,Speech Grocery,Grocery,418.7,265.01
+PROD0121,Speech Grocery Pro,Grocery,751.76,507.59
+PROD0122,Game Home Plus,Home & Kitchen,993.76,604.24
+PROD0123,Even Electronics,Electronics,21424.68,16897.96
+PROD0124,Color Beauty Max,Beauty,2908.87,1621.42
+PROD0125,Statement Home Plus,Home & Kitchen,11796.3,7934.79
+PROD0126,Back Home Plus,Home & Kitchen,8384.51,5516.69
+PROD0127,Factor Books Plus,Books,919.23,525.27
+PROD0128,Standard Sports Lite,Sports,3825.7,2786.17
+PROD0129,Assume Electronics Plus,Electronics,17176.36,12503.0
+PROD0130,Idea Books Plus,Books,314.99,198.18
+PROD0131,Important Electronics Max,Electronics,6853.95,4531.72
+PROD0132,Go Grocery Lite,Grocery,305.28,174.57
+PROD0133,As Beauty,Beauty,1400.65,949.8
+PROD0134,Evening Electronics Max,Electronics,3036.32,2090.67
+PROD0135,Tax Sports Max,Sports,7336.91,5619.56
+PROD0136,Evidence Electronics Plus,Electronics,18573.07,13833.08
+PROD0137,Could Books Lite,Books,1360.59,942.88
+PROD0138,Let Fashion Lite,Fashion,3519.99,2058.17
+PROD0139,Available Home Lite,Home & Kitchen,4171.69,2360.41
+PROD0140,Million Beauty Max,Beauty,899.29,603.48
+PROD0141,Without Electronics Lite,Electronics,22625.81,16521.93
+PROD0142,Deep Beauty Lite,Beauty,1821.04,1210.02
+PROD0143,Poor Fashion Plus,Fashion,1730.89,1095.75
+PROD0144,Increase Sports Max,Sports,4806.1,3172.29
+PROD0145,Could Beauty,Beauty,2463.88,1438.98
+PROD0146,Quite Home Lite,Home & Kitchen,9127.13,6112.92
+PROD0147,Million Fashion Max,Fashion,4832.5,3009.98
+PROD0148,Boy Books,Books,985.06,734.36
+PROD0149,Charge Home Plus,Home & Kitchen,5764.99,3696.82
+PROD0150,Now Sports,Sports,2716.88,1616.49
