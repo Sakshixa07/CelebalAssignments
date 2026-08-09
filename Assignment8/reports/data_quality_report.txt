@@ -1,0 +1,28 @@
+DATA QUALITY REPORT
+============================================================
+
+[orders.csv]
+  Missing customer_id rows fixed/flagged : 141
+  Dates reformatted to YYYY-MM-DD HH:MM:SS: 232
+  Unparseable dates (set to NaT)          : 0
+  Future-dated orders (flagged, not fixed): 0
+
+[products.csv]
+  Product names normalized (trim + title case): 55
+  Duplicate names after normalization          : 0
+  Examples (before -> after):
+    'premium phone mini' -> 'Premium Phone Mini'
+    'compact phone x' -> 'Compact Phone X'
+    'PRO PHONE X' -> 'Pro Phone X'
+    '  Essential Phone Mini  ' -> 'Essential Phone Mini'
+    'elite phone x' -> 'Elite Phone X'
+
+[customers.csv]
+  Invalid emails found: 7
+  Affected customer_ids (first 10): [138, 233, 260, 362, 417, 528, 588]
+
+[order_items.csv]
+  Orphaned order_items (order_id not in orders): 0
+  Negative-quantity rows (returns)              : 299
+  Zero-quantity rows                            : 0
+  discount_percent out of [0,100] range         : 0

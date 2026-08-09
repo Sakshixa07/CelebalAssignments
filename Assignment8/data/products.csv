@@ -1,0 +1,151 @@
+product_id,product_name,category,subcategory,cost_price
+1,premium phone mini,Electronics,Smartphones,178.86
+2,Classic Phone Mini,Electronics,Smartphones,395.42
+3,Deluxe Phone Max,Electronics,Smartphones,116.66
+4,compact phone x,Electronics,Smartphones,150.98
+5,PRO PHONE X,Electronics,Smartphones,41.73
+6,  Essential Phone Mini  ,Electronics,Smartphones,84.65
+7,Ultra Phone X,Electronics,Smartphones,172.29
+8,Smart Phone Mini,Electronics,Smartphones,353.73
+9,Portable Phone Max,Electronics,Smartphones,86.67
+10,elite phone x,Electronics,Smartphones,31.51
+11,Premium Notebook 14,Electronics,Laptops,207.59
+12,Classic Gaming Laptop,Electronics,Laptops,272.36
+13,  Deluxe Notebook Air  ,Electronics,Laptops,122.59
+14,Compact Gaming Laptop,Electronics,Laptops,277.08
+15,Pro Notebook 14,Electronics,Laptops,183.61
+16,Essential Notebook Air,Electronics,Laptops,412.83
+17,  Ultra Notebook Air  ,Electronics,Laptops,103.84
+18,Smart Notebook 14,Electronics,Laptops,320.9
+19,portable notebook air,Electronics,Laptops,422.67
+20,Elite Notebook Air,Electronics,Laptops,238.12
+21,Premium Over-Ear Headset,Electronics,Headphones,50.11
+22,classic earbuds,Electronics,Headphones,188.66
+23,DELUXE EARBUDS,Electronics,Headphones,225.66
+24,Compact Over-Ear Headset,Electronics,Headphones,135.38
+25,Pro Wireless Buds,Electronics,Headphones,35.51
+26,Essential Wireless Buds,Electronics,Headphones,52.87
+27,Ultra Wireless Buds,Electronics,Headphones,209.92
+28,Smart Earbuds,Electronics,Headphones,279.03
+29,Portable Wireless Buds,Electronics,Headphones,212.22
+30,ELITE OVER-EAR HEADSET,Electronics,Headphones,288.49
+31,Premium Action Cam,Electronics,Cameras,44.08
+32,Classic Instant Camera,Electronics,Cameras,22.19
+33,Deluxe Instant Camera,Electronics,Cameras,401.22
+34,Compact Instant Camera,Electronics,Cameras,77.99
+35,Pro Action Cam,Electronics,Cameras,90.58
+36,  Essential DSLR Camera  ,Electronics,Cameras,405.19
+37,Ultra Action Cam,Electronics,Cameras,43.79
+38,Smart DSLR Camera,Electronics,Cameras,498.65
+39,Portable Instant Camera,Electronics,Cameras,132.65
+40,Elite DSLR Camera,Electronics,Cameras,48.08
+41,PREMIUM PHONE CASE,Electronics,Accessories,166.43
+42,  Classic Power Bank  ,Electronics,Accessories,459.0
+43,Deluxe Phone Case,Electronics,Accessories,313.41
+44,  Compact Power Bank  ,Electronics,Accessories,60.7
+45,Pro Phone Case,Electronics,Accessories,296.03
+46,Essential Charger,Electronics,Accessories,462.84
+47,Ultra Charger,Electronics,Accessories,393.94
+48,SMART POWER BANK,Electronics,Accessories,439.56
+49,Portable Phone Case,Electronics,Accessories,245.36
+50,Elite Charger,Electronics,Accessories,90.24
+51,Premium Jacket,Clothing,Men,306.28
+52,Classic T-Shirt,Clothing,Men,200.92
+53,Deluxe Jacket,Clothing,Men,122.6
+54,  Compact Jeans  ,Clothing,Men,449.03
+55,Pro Jeans,Clothing,Men,158.92
+56,Essential Jacket,Clothing,Men,344.0
+57,Ultra T-Shirt,Clothing,Men,71.52
+58,smart jeans,Clothing,Men,388.15
+59,Portable Jacket,Clothing,Men,211.3
+60,Elite T-Shirt,Clothing,Men,223.65
+61,Premium Top,Clothing,Women,371.77
+62,Classic Top,Clothing,Women,411.4
+63,Deluxe Dress,Clothing,Women,37.48
+64,Compact Top,Clothing,Women,72.15
+65,PRO SKIRT,Clothing,Women,19.33
+66,ESSENTIAL DRESS,Clothing,Women,419.3
+67,ultra top,Clothing,Women,30.03
+68,Smart Dress,Clothing,Women,140.62
+69,Portable Skirt,Clothing,Women,201.49
+70,elite skirt,Clothing,Women,20.13
+71,Premium Onesie,Clothing,Kids,225.82
+72,classic shorts,Clothing,Kids,295.51
+73,DELUXE T-SHIRT,Clothing,Kids,419.64
+74,  Compact Onesie  ,Clothing,Kids,49.74
+75,Pro T-Shirt,Clothing,Kids,85.64
+76,Essential T-Shirt,Clothing,Kids,429.27
+77,Ultra Onesie,Clothing,Kids,107.33
+78,Smart Onesie,Clothing,Kids,14.93
+79,Portable Onesie,Clothing,Kids,9.4
+80,Elite Onesie,Clothing,Kids,90.73
+81,Premium Sneakers,Clothing,Footwear,129.93
+82,Classic Sandals,Clothing,Footwear,357.81
+83,deluxe sandals,Clothing,Footwear,214.78
+84,COMPACT SANDALS,Clothing,Footwear,232.2
+85,Pro Sandals,Clothing,Footwear,340.21
+86,  Essential Sandals  ,Clothing,Footwear,294.32
+87,Ultra Boots,Clothing,Footwear,483.41
+88,Smart Boots,Clothing,Footwear,325.43
+89,Portable Sandals,Clothing,Footwear,343.78
+90,Elite Sandals,Clothing,Footwear,494.24
+91,Premium Hoodie,Clothing,Winterwear,134.27
+92,  Classic Coat  ,Clothing,Winterwear,152.9
+93,Deluxe Sweater,Clothing,Winterwear,450.35
+94,compact coat,Clothing,Winterwear,205.03
+95,Pro Sweater,Clothing,Winterwear,362.04
+96,Essential Hoodie,Clothing,Winterwear,133.42
+97,Ultra Hoodie,Clothing,Winterwear,369.68
+98,smart coat,Clothing,Winterwear,408.93
+99,Portable Coat,Clothing,Winterwear,115.07
+100,Elite Hoodie,Clothing,Winterwear,453.73
+101,PREMIUM KNIFE SET,Home,Kitchen,153.6
+102,CLASSIC KNIFE SET,Home,Kitchen,438.86
+103,Deluxe Blender,Home,Kitchen,238.04
+104,Compact Knife Set,Home,Kitchen,405.13
+105,Pro Blender,Home,Kitchen,473.73
+106,essential knife set,Home,Kitchen,49.2
+107,Ultra Knife Set,Home,Kitchen,436.36
+108,Smart Cookware Set,Home,Kitchen,188.98
+109,Portable Cookware Set,Home,Kitchen,426.35
+110,Elite Knife Set,Home,Kitchen,293.87
+111,PREMIUM CHAIR,Home,Furniture,238.75
+112,classic chair,Home,Furniture,434.41
+113,Deluxe Table,Home,Furniture,209.49
+114,COMPACT CHAIR,Home,Furniture,73.0
+115,Pro Table,Home,Furniture,493.66
+116,Essential Table,Home,Furniture,75.9
+117,Ultra Chair,Home,Furniture,390.58
+118,smart bookshelf,Home,Furniture,493.39
+119,PORTABLE CHAIR,Home,Furniture,7.33
+120,ELITE CHAIR,Home,Furniture,290.26
+121,Premium Wall Clock,Home,Decor,69.06
+122,Classic Vase,Home,Decor,204.68
+123,Deluxe Vase,Home,Decor,7.31
+124,  Compact Photo Frame  ,Home,Decor,189.69
+125,Pro Vase,Home,Decor,379.64
+126,Essential Wall Clock,Home,Decor,339.99
+127,Ultra Wall Clock,Home,Decor,117.0
+128,smart vase,Home,Decor,68.82
+129,  Portable Photo Frame  ,Home,Decor,156.53
+130,ELITE WALL CLOCK,Home,Decor,152.61
+131,Premium Ceiling Light,Home,Lighting,262.54
+132,Classic LED Strip,Home,Lighting,444.55
+133,Deluxe LED Strip,Home,Lighting,498.09
+134,Compact Table Lamp,Home,Lighting,86.62
+135,PRO LED STRIP,Home,Lighting,14.47
+136,  Essential Table Lamp  ,Home,Lighting,109.54
+137,ultra ceiling light,Home,Lighting,88.65
+138,smart ceiling light,Home,Lighting,397.1
+139,Portable Ceiling Light,Home,Lighting,131.62
+140,  Elite Table Lamp  ,Home,Lighting,298.99
+141,  Premium Bedsheet Set  ,Home,Bedding,328.52
+142,Classic Comforter,Home,Bedding,62.32
+143,Deluxe Bedsheet Set,Home,Bedding,275.9
+144,Compact Bedsheet Set,Home,Bedding,106.72
+145,Pro Bedsheet Set,Home,Bedding,154.05
+146,Essential Comforter,Home,Bedding,262.55
+147,Ultra Comforter,Home,Bedding,72.9
+148,Smart Bedsheet Set,Home,Bedding,258.23
+149,  Portable Pillow  ,Home,Bedding,61.44
+150,Elite Bedsheet Set,Home,Bedding,306.46
